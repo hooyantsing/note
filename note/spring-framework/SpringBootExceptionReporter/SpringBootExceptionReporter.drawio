@@ -1,0 +1,87 @@
+<mxfile host="Electron" modified="2025-06-27T06:30:39.553Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.21 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Qi7f7cdDWPoE2_0Fa55L" version="22.1.21" type="device">
+  <diagram name="第 1 页" id="6TIrJjVQ-_pBsXt9Gca_">
+    <mxGraphModel dx="2901" dy="1196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-2" value="用于报告 SpringBoot 启动时错误的接口" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="160" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-5" value="SpringBoot 提供的唯一默认实现&lt;br&gt;遍历所有 FailureAnalyzer，看谁对 Throwable 感兴趣" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-112.5" y="576" width="385" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=block;endFill=0;dashed=1;" edge="1" parent="1" source="h_D-NyxPbKNbZKJ697ty-7" target="h_D-NyxPbKNbZKJ697ty-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-7" value="FailureAnalyzers" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="490" width="220" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-8" value="- analyzers: List&amp;lt;FailureAnalyzer&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h_D-NyxPbKNbZKJ697ty-7">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h_D-NyxPbKNbZKJ697ty-7">
+          <mxGeometry y="52" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-10" value="+ reportException(Throwable): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h_D-NyxPbKNbZKJ697ty-7">
+          <mxGeometry y="60" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;SpringBootExceptionReporter&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ reportException(Throwable): boolean&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="190" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=diamondThin;endFill=0;" edge="1" parent="1" source="h_D-NyxPbKNbZKJ697ty-14" target="h_D-NyxPbKNbZKJ697ty-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;FailureAnalyzer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ analyze(Throwable): FailureAnalysis&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-380" y="495.5" width="220" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;endArrow=diamondThin;endFill=1;" edge="1" parent="1" source="h_D-NyxPbKNbZKJ697ty-20" target="h_D-NyxPbKNbZKJ697ty-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-20" value="FailureAnalysis" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="600" width="160" height="80" as="geometry">
+            <mxRectangle x="-700" y="210" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-21" value="- description: String&lt;br&gt;- action: String&lt;br&gt;- cause: Throwable" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h_D-NyxPbKNbZKJ697ty-20">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-25" value="存放失败原因的数据类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-630" y="680" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-27" value="各种失败原因分析器，包括由于端口已被占用的失败分析器" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="465.5" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="h_D-NyxPbKNbZKJ697ty-28" target="h_D-NyxPbKNbZKJ697ty-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-28" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;AbstractFailureAnalyzer&amp;lt;T extends Throwable&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ analyze(Throwable): FailureAnalysis&lt;br&gt;# analyze(Throwable, &amp;lt;T&amp;gt;): FailureAnalysis&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-425" y="760" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-30" value="SpringBoot&amp;nbsp; 启动阶段抛出的 Throwable&lt;br&gt;遍历 Throwable 异常栈，寻找与当前 FailureAnalyzer 泛型相同的异常实例，找到了则返回 FailureAnalysis 实例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-572.5" y="840" width="605" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="h_D-NyxPbKNbZKJ697ty-31" target="h_D-NyxPbKNbZKJ697ty-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-31" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;FailureAnalysisReporter&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ report(FailureAnalysis): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="347.5" y="512" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-32" value="真正消费 FailureAnalysis 失败原因" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="482" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="h_D-NyxPbKNbZKJ697ty-34" target="h_D-NyxPbKNbZKJ697ty-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-34" value="LoggingFailureAnalysisReporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="716" width="235" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-37" value="+ report(FailureAnalysis): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h_D-NyxPbKNbZKJ697ty-34">
+          <mxGeometry y="26" width="235" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="h_D-NyxPbKNbZKJ697ty-39" value="SpringBoot 提供的唯一默认实现&lt;br&gt;我们常见的启动错误信息就是由此类消费错误原因并格式化输出至日志窗口" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="768" width="425" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
